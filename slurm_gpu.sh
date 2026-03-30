@@ -4,7 +4,7 @@
 #SBATCH --error=logs/%x_%j.err
 #SBATCH --time=02:00:00
 #SBATCH --partition=gpu
-#SBATCH --mem=64G
+#SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
 #SBATCH --gpus=h200-141:1
 
