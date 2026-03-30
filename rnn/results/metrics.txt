@@ -1,0 +1,23 @@
+Model: Siamese GRU
+Best epoch: 10/10
+Threshold: 0.5
+
+Accuracy:  0.8776
+F1:        0.8462
+Precision: 0.7892
+Recall:    0.9120
+
+              precision    recall  f1-score   support
+
+           0     0.9433    0.8574    0.8983     51005
+           1     0.7892    0.9120    0.8462     29853
+
+    accuracy                         0.8776     80858
+   macro avg     0.8663    0.8847    0.8722     80858
+weighted avg     0.8864    0.8776    0.8791     80858
+
+Confusion matrix:
+[[43732  7273]
+ [ 2627 27226]]
+
+Total training time: 36.9s
