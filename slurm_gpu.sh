@@ -22,9 +22,9 @@ shift
 SCRIPT_ARGS="$@"
 
 cd ~/cs3244-group14
+source ~/venv/bin/activate
 
 echo "Running: python $SCRIPT $SCRIPT_ARGS"
 echo "Device: $(nvidia-smi --query-gpu=name --format=csv,noheader 2>/dev/null || echo 'no GPU detected')"
 
-pip install -r requirements.txt --quiet 2>/dev/null
 python "$SCRIPT" $SCRIPT_ARGS
